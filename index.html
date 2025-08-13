@@ -1,10 +1,11 @@
+
 <!doctype html>
 <html lang="ko">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>THE ATIC · EPK</title>
-  <meta name="description" content="THE ATIC — Electronic Press Kit"/>
+  <meta name="description" content="THE ATIC Electronic Press Kit" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Pretendard:wght@400;600;700&display=swap" rel="stylesheet">
@@ -13,80 +14,139 @@
 <body>
 <header class="header">
   <a href="#top" class="brand">
-    <img src="./assets/logo.jpg" alt="THE ATIC logo">
+    <img src="./assets/logo-mark.svg" alt="THE ATIC">
     <span>THE ATIC</span>
   </a>
   <button id="navToggle" class="nav-toggle" aria-label="메뉴 열기">☰</button>
   <nav id="nav" class="nav">
-    <a href="#team">팀소개</a>
+    <a href="#about">팀소개</a>
     <a href="#members">멤버소개</a>
     <a href="#music">음악</a>
   </nav>
 </header>
 
 <section id="top" class="hero" aria-label="Band photo">
-  <img src="./assets/group_main.jpg" alt="THE ATIC group" class="hero-img"/>
-  <div class="hero-overlay">
+  <!-- NOTE: Provide your own high-res group photo at assets/all_main.jpg -->
+  <img src="./assets/all_main.jpg" alt="THE ATIC group" class="hero-img">
+  <div class="hero-overlay"></div>
+  <div class="hero-text">
     <h1 class="title">THE ATIC</h1>
-    <p class="subtitle">Electronic Press Kit</p>
   </div>
 </section>
 
 <main>
-  <section id="team" class="section narrow">
-    <h2>팀소개</h2>
-    <p><strong>THE ATIC</strong>은 프로듀서 <strong>안서현</strong>을 중심으로 문영성, 심형석, 윤병준, 박정현으로 구성된 밴드입니다. 2020년 결성, 2022년 싱글 <em>Lose yourself</em>로 데뷔했고 현재까지 2장의 EP와 9개의 싱글을 발표했습니다. 트랩·신스웨이브·퓨처베이스·뭄바톤 등 일렉트로닉 장르와 밴드 사운드를 결합한 ‘모순적 조화’를 지향합니다.</p>
-    <ul class="socials">
-      <li><a href="https://www.instagram.com/theatic_official" target="_blank" rel="noopener" aria-label="Instagram"><img src="./assets/instagram.svg" alt="" />Instagram</a></li>
-      <li><a href="https://www.youtube.com/@theatic_official" target="_blank" rel="noopener" aria-label="YouTube"><img src="./assets/youtube.svg" alt="" />YouTube</a></li>
-      <li><a href="https://linktr.ee/The_ATIC" target="_blank" rel="noopener" aria-label="Linktree"><img src="./assets/linktree.svg" alt="" />Linktree</a></li>
-    </ul>
+  <section id="about" class="section">
+    <div class="section-head">
+      <h2>팀소개</h2>
+      <div class="socials">
+        <a href="https://www.instagram.com/theatic_official" target="_blank" rel="noopener" aria-label="Instagram" class="icon ig"></a>
+        <a href="https://www.youtube.com/@theatic_official" target="_blank" rel="noopener" aria-label="YouTube" class="icon yt"></a>
+        <a href="https://linktr.ee/The_ATIC" target="_blank" rel="noopener" aria-label="Linktree" class="icon lt"></a>
+      </div>
+    </div>
+    <p class="lead"><strong>THE ATIC</strong>은 프로듀서 <strong>안서현</strong>을 중심으로 문영성, 심형석, 윤병준, 박정현으로 구성된 밴드입니다. 2020년 결성, 2022년 싱글 <em>Lose yourself</em>로 데뷔했고 현재까지 EP 2장과 여러 싱글을 발표했습니다. 트랩·신스웨이브·퓨처베이스·뭄바톤 등 전자음악과 밴드 사운드를 결합해 ‘현실과 허구의 모순적 조화’를 지향합니다.</p>
+    <p class="schedule"><a href="https://push.fm/fl/tgxziwqv" target="_blank" rel="noopener">공연 & 스케줄 보기</a></p>
 
-    <h3 class="subhead">수상 및 활동</h3>
-    <ul class="bullets">
-      <li>2025 일본 투어 (Shibuya Cyclone, Shinjuku Antiknock)</li>
-      <li>2024 Booming Studios Another Live 시즌 2 우승</li>
-      <li>2024 Blending the Million Quest 우승 · 10월의 아티스트</li>
-      <li>2024 지역문화쇼케이스 부산 동구문화위원장상</li>
-      <li>2024 라이징스타를 찾아라 TOP10</li>
-      <li>2022 한국음악실연자연합회 지원사업 선정</li>
+    <h3 class="sub">수상 및 활동</h3>
+    <ul class="awards tight">
+      <li>Booming Studios ‘Another Live’ S2 우승</li>
+      <li>Blending the Million Quest 우승 · 10월의 아티스트</li>
+      <li>지역문화쇼케이스 부산 동구문화위원장상</li>
+      <li>라이징스타를 찾아라 TOP10</li>
+      <li>일본 투어 (Shibuya Cyclone · Shinjuku Antiknock)</li>
     </ul>
   </section>
 
   <section id="members" class="section">
     <h2>멤버소개</h2>
-    <ul class="members">
-      <li><strong>PD</strong> · 안서현 <span class="sep">·</span> <a href="https://www.instagram.com/sha_atic" target="_blank" rel="noopener">@sha_atic</a></li>
-      <li><strong>Vocal</strong> · 문영성 <span class="sep">·</span> <a href="https://www.instagram.com/mu__ny" target="_blank" rel="noopener">@mu__ny</a></li>
-      <li><strong>Bass</strong> · 윤병준 <span class="sep">·</span> <a href="https://www.instagram.com/junbottle" target="_blank" rel="noopener">@junbottle</a></li>
-      <li><strong>Drum</strong> · 심형석 <span class="sep">·</span> <a href="https://www.instagram.com/vo.sim_drum" target="_blank" rel="noopener">@vo.sim_drum</a></li>
-      <li><strong>Guitar</strong> · 박정현 <span class="sep">·</span> <a href="https://www.instagram.com/jgt_5677" target="_blank" rel="noopener">@jgt_5677</a></li>
+    <ul class="member-grid">
+      <!-- NOTE: replace thumb_*.jpg and large_*.jpg with your own images -->
+      <li class="card" data-name="안서현" data-role="PD" data-ig="https://www.instagram.com/sha_atic" data-large="./assets/large_pd.jpg">
+        <img src="./assets/thumb_pd.jpg" alt="안서현">
+        <p><strong>PD</strong> · 안서현</p>
+      </li>
+      <li class="card" data-name="문영성" data-role="Vocal" data-ig="https://www.instagram.com/mu__ny" data-large="./assets/large_vocal.jpg">
+        <img src="./assets/thumb_vocal.jpg" alt="문영성">
+        <p><strong>Vocal</strong> · 문영성</p>
+      </li>
+      <li class="card" data-name="윤병준" data-role="Bass" data-ig="https://www.instagram.com/junbottle" data-large="./assets/large_bass.jpg">
+        <img src="./assets/thumb_bass.jpg" alt="윤병준">
+        <p><strong>Bass</strong> · 윤병준</p>
+      </li>
+      <li class="card" data-name="심형석" data-role="Drum" data-ig="https://www.instagram.com/vo.sim_drum" data-large="./assets/large_drum.jpg">
+        <img src="./assets/thumb_drum.jpg" alt="심형석">
+        <p><strong>Drum</strong> · 심형석</p>
+      </li>
+      <li class="card" data-name="박정현" data-role="Guitar" data-ig="https://www.instagram.com/jgt_5677" data-large="./assets/large_guitar.jpg">
+        <img src="./assets/thumb_guitar.jpg" alt="박정현">
+        <p><strong>Guitar</strong> · 박정현</p>
+      </li>
     </ul>
-    <figure class="photo-wide">
-      <img src="./assets/group_alt.jpg" alt="THE ATIC rooftop photo"/>
+    <!-- secondary group photo area, fading into sections -->
+    <figure class="photo-bridge">
+      <img src="./assets/all_alt.jpg" alt="THE ATIC rooftop">
     </figure>
   </section>
 
   <section id="music" class="section">
     <h2>음악</h2>
-    <ul class="list cols-2">
-      <li><a href="https://www.youtube.com/watch?v=Rsbzr6y6djs" target="_blank" rel="noopener">Insomnia (MV)</a></li>
-      <li><a href="https://www.youtube.com/watch?v=z5HMJVagmfA" target="_blank" rel="noopener">Lose yourself (MV)</a></li>
-      <li><a href="https://www.youtube.com/watch?v=dXzBRk-xrDg" target="_blank" rel="noopener">Stay (MV)</a></li>
-      <li><a href="https://www.youtube.com/watch?v=uLp8hwRpElc" target="_blank" rel="noopener">Ocean wave (MV)</a></li>
-      <li><a href="https://www.youtube.com/watch?v=8QNvefaFeVE" target="_blank" rel="noopener">Nebula (MV)</a></li>
-      <li><a href="https://www.youtube.com/watch?v=yWmjoiJcYPk" target="_blank" rel="noopener">Never let you go (MV)</a></li>
-      <li><a href="https://www.youtube.com/watch?v=TxYBINHztUY" target="_blank" rel="noopener">Lose yourself (Live @Shibuya Cyclone)</a></li>
-      <li><a href="https://www.youtube.com/watch?v=73sm_HfWT6I" target="_blank" rel="noopener">Fire Race Festival (Live)</a></li>
+    <ul class="disc-grid">
+      <li class="disc" data-panel="p1" style="--img:url('./assets/cover_ywil.jpg');">
+        <button class="disc-btn" aria-expanded="false"><span class="sr-only">You Were In Love</span></button>
+        <div id="p1" class="panel">
+          <h4>You Were In Love (2025)</h4>
+          <ul class="links">
+            <li><a href="https://www.youtube.com/watch?v=Rsbzr6y6djs" target="_blank" rel="noopener">뮤직비디오</a></li>
+            <li><a href="https://linksalad.net/6oRUkBvcAZ" target="_blank" rel="noopener">스트리밍</a></li>
+          </ul>
+        </div>
+        <small class="caption">You Were In Love</small>
+      </li>
+
+      <li class="disc" data-panel="p2" style="--img:url('./assets/cover_insomnia.jpg');">
+        <button class="disc-btn" aria-expanded="false"><span class="sr-only">Insomnia</span></button>
+        <div id="p2" class="panel">
+          <h4>Insomnia</h4>
+          <ul class="links">
+            <li><a href="https://www.youtube.com/watch?v=z5HMJVagmfA" target="_blank" rel="noopener">뮤직비디오</a></li>
+            <li><a href="https://push.fm/fl/dqoxamnl" target="_blank" rel="noopener">스트리밍</a></li>
+          </ul>
+        </div>
+        <small class="caption">Insomnia</small>
+      </li>
+
+      <li class="disc" data-panel="p3" style="--img:url('./assets/cover_oceanwave.jpg');">
+        <button class="disc-btn" aria-expanded="false"><span class="sr-only">Ocean wave</span></button>
+        <div id="p3" class="panel">
+          <h4>Ocean wave</h4>
+          <ul class="links">
+            <li><a href="https://www.youtube.com/watch?v=uLp8hwRpElc" target="_blank" rel="noopener">뮤직비디오</a></li>
+            <li><a href="https://linksalad.net/E88zp9RX2v" target="_blank" rel="noopener">스트리밍</a></li>
+          </ul>
+        </div>
+        <small class="caption">Ocean wave</small>
+      </li>
+
+      <li class="disc" data-panel="p4" style="--img:url('./assets/cover_nebula.jpg');">
+        <button class="disc-btn" aria-expanded="false"><span class="sr-only">Nebula</span></button>
+        <div id="p4" class="panel">
+          <h4>Nebula</h4>
+          <ul class="links">
+            <li><a href="https://www.youtube.com/watch?v=8QNvefaFeVE" target="_blank" rel="noopener">뮤직비디오</a></li>
+            <li><a href="https://linksalad.net/Zi_tr6nJm5" target="_blank" rel="noopener">스트리밍</a></li>
+          </ul>
+        </div>
+        <small class="caption">Nebula</small>
+      </li>
     </ul>
   </section>
 </main>
 
 <footer class="footer">
-  <div class="footer-socials">
-    <a href="https://www.instagram.com/theatic_official" target="_blank" rel="noopener" aria-label="Instagram"><img src="./assets/instagram.svg" alt=""></a>
-    <a href="https://www.youtube.com/@theatic_official" target="_blank" rel="noopener" aria-label="YouTube"><img src="./assets/youtube.svg" alt=""></a>
-    <a href="https://linktr.ee/The_ATIC" target="_blank" rel="noopener" aria-label="Linktree"><img src="./assets/linktree.svg" alt=""></a>
+  <div class="foot-links">
+    <a href="https://www.instagram.com/theatic_official" target="_blank" rel="noopener" aria-label="Instagram" class="icon ig small"></a>
+    <a href="https://www.youtube.com/@theatic_official" target="_blank" rel="noopener" aria-label="YouTube" class="icon yt small"></a>
+    <a href="https://linktr.ee/The_ATIC" target="_blank" rel="noopener" aria-label="Linktree" class="icon lt small"></a>
   </div>
   <p>© <span id="year"></span> THE ATIC</p>
 </footer>

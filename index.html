@@ -2,19 +2,19 @@
 <!doctype html>
 <html lang="ko">
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>THE ATIC · EPK</title>
   <meta name="description" content="THE ATIC Electronic Press Kit" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
 <header class="header">
   <a href="#top" class="brand">
-    <img src="./assets/logo-mark.svg" alt="THE ATIC">
+    <img src="./assets/logo-mark.svg" alt="THE ATIC" />
     <span>THE ATIC</span>
   </a>
   <button id="navToggle" class="nav-toggle" aria-label="메뉴 열기">☰</button>
@@ -25,8 +25,8 @@
   </nav>
 </header>
 
-<section id="top" class="hero">
-  <img src="./assets/all_main.jpg" alt="THE ATIC group" class="hero-img">
+<section id="top" class="hero" aria-label="Band photo">
+  <img src="./assets/all_main.jpg" alt="THE ATIC group" class="hero-img" />
   <div class="hero-overlay"></div>
   <div class="hero-text"><h1 class="title">THE ATIC</h1></div>
 </section>
@@ -43,13 +43,15 @@
     </div>
     <p class="lead"><strong>THE ATIC</strong>은 프로듀서 <strong>안서현</strong>을 중심으로 문영성, 심형석, 윤병준, 박정현으로 구성된 밴드입니다. 2020년 결성, 2022년 싱글 <em>Lose yourself</em>로 데뷔했고 EP 2장과 다수의 싱글을 발표했습니다. 전자음악과 밴드 사운드의 모순적 조화를 지향합니다.</p>
     <p class="schedule"><a href="https://push.fm/fl/tgxziwqv" target="_blank" rel="noopener">공연 & 스케줄 보기</a></p>
-    <h3 class="sub">수상 및 활동</h3>
+
+    <h3 class="sub">주요 이력</h3>
     <ul class="awards tight">
       <li>Booming Studios ‘Another Live’ S2 우승</li>
       <li>Blending the Million Quest 우승 · 10월의 아티스트</li>
       <li>지역문화쇼케이스 부산 동구문화위원장상</li>
       <li>라이징스타를 찾아라 TOP10</li>
       <li>일본 투어 (Shibuya Cyclone · Shinjuku Antiknock)</li>
+      <li>싱글·EP 다수 발매 (Lose yourself, Insomnia, Ocean wave, Nebula, By your side 등)</li>
     </ul>
   </section>
 
@@ -78,13 +80,32 @@
   <section id="music" class="section">
     <h2>음악</h2>
     <ul class="disc-grid">
+      <li class="disc" data-panel="p_ywil" style="--img:url('./assets/cover_ywil.jpg');">
+        <button class="disc-btn" aria-expanded="false"><span class="sr-only">You Were In Love</span></button>
+        <div id="p_ywil" class="panel">
+          <h4>You Were In Love (2025)</h4>
+          <ul class="links">
+            <li><a href="https://www.youtube.com/watch?v=Rsbzr6y6djs" target="_blank" rel="noopener">뮤직비디오</a></li>
+            <li><a href="https://linksalad.net/6oRUkBvcAZ" target="_blank" rel="noopener">스트리밍</a></li>
+          </ul>
+        </div><small class="caption">You Were In Love</small>
+      </li>
+
+      <li class="disc" data-panel="p_chroma" style="--img:url('./assets/cover_thechroma.jpg');">
+        <button class="disc-btn" aria-expanded="false"><span class="sr-only">The Chroma</span></button>
+        <div id="p_chroma" class="panel">
+          <h4>The Chroma</h4>
+          <ul class="links">
+            <li><a href="https://linktr.ee/The_ATIC" target="_blank" rel="noopener">Linktree</a></li>
+          </ul>
+        </div><small class="caption">The Chroma</small>
+      </li>
+
       <li class="disc" data-panel="p_bys" style="--img:url('./assets/cover_byyourside.jpg');">
         <button class="disc-btn" aria-expanded="false"><span class="sr-only">By your side</span></button>
         <div id="p_bys" class="panel">
           <h4>By your side</h4>
-          <ul class="links">
-            <li><a href="https://push.fm/fl/q2tax5dg" target="_blank" rel="noopener">스트리밍</a></li>
-          </ul>
+          <ul class="links"><li><a href="https://push.fm/fl/q2tax5dg" target="_blank" rel="noopener">스트리밍</a></li></ul>
         </div><small class="caption">By your side</small>
       </li>
 
@@ -92,9 +113,7 @@
         <button class="disc-btn" aria-expanded="false"><span class="sr-only">I Can Never Touch You</span></button>
         <div id="p_icnty" class="panel">
           <h4>I Can Never Touch You</h4>
-          <ul class="links">
-            <li><a href="https://linktr.ee/The_ATIC" target="_blank" rel="noopener">Linktree</a></li>
-          </ul>
+          <ul class="links"><li><a href="https://linktr.ee/The_ATIC" target="_blank" rel="noopener">Linktree</a></li></ul>
         </div><small class="caption">I Can Never Touch You</small>
       </li>
 
@@ -113,9 +132,7 @@
         <button class="disc-btn" aria-expanded="false"><span class="sr-only">Lady</span></button>
         <div id="p_lady" class="panel">
           <h4>Lady</h4>
-          <ul class="links">
-            <li><a href="https://push.fm/fl/v8ncfcvq" target="_blank" rel="noopener">스트리밍</a></li>
-          </ul>
+          <ul class="links"><li><a href="https://push.fm/fl/v8ncfcvq" target="_blank" rel="noopener">스트리밍</a></li></ul>
         </div><small class="caption">Lady</small>
       </li>
 
@@ -167,9 +184,7 @@
         <button class="disc-btn" aria-expanded="false"><span class="sr-only">Stay</span></button>
         <div id="p_stay" class="panel">
           <h4>Stay</h4>
-          <ul class="links">
-            <li><a href="https://www.youtube.com/watch?v=dXzBRk-xrDg" target="_blank" rel="noopener">뮤직비디오</a></li>
-          </ul>
+          <ul class="links"><li><a href="https://www.youtube.com/watch?v=dXzBRk-xrDg" target="_blank" rel="noopener">뮤직비디오</a></li></ul>
         </div><small class="caption">Stay</small>
       </li>
 
@@ -177,9 +192,7 @@
         <button class="disc-btn" aria-expanded="false"><span class="sr-only">The Beginning</span></button>
         <div id="p_begin" class="panel">
           <h4>The Beginning</h4>
-          <ul class="links">
-            <li><a href="https://linktr.ee/The_ATIC" target="_blank" rel="noopener">Linktree</a></li>
-          </ul>
+          <ul class="links"><li><a href="https://linktr.ee/The_ATIC" target="_blank" rel="noopener">Linktree</a></li></ul>
         </div><small class="caption">The Beginning</small>
       </li>
     </ul>

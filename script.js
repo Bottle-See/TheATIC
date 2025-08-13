@@ -3,6 +3,7 @@ const year = document.getElementById('year'); if (year) year.textContent = new D
 const navToggle = document.getElementById('navToggle'); const nav = document.getElementById('nav');
 if (navToggle) navToggle.addEventListener('click', () => nav.classList.toggle('open'));
 
+// Member modal
 const modal = document.createElement('div');
 modal.className = 'modal';
 modal.innerHTML = `<div class="modal-card">

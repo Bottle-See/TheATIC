@@ -35,6 +35,7 @@ document.querySelectorAll('.member-grid .card').forEach(card => {
   });
 });
 
+// Discs: only one panel open at a time
 document.querySelectorAll('.disc').forEach(disc => {
   const btn = disc.querySelector('.disc-btn');
   const panel = document.getElementById(disc.dataset.panel);
